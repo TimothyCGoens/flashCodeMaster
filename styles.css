@@ -1,0 +1,234 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  font-family: 'Inconsolata', monospace;
+}
+#header {
+  font-family: 'Inconsolata', monospace;
+}
+
+#loginPane {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+#flash-card-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 25px;
+}
+
+.navbar {
+  text-align: center;
+}
+
+#flashCards {
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.next {
+  margin-top: 5px;
+  margin-left: 63px;
+  width: 88.3px;
+}
+.previous {
+  margin-top: 5px;
+  margin-right: 63px;
+  background-color: #e4500a;
+}
+
+.log-in {
+  position: absolute;
+  right: 0px;
+}
+.log-out {
+  position: absolute;
+  right: 0px;
+}
+
+
+
+/* python flip cards*/
+.python-flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.python-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.python-flip-card:hover .python-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.python-flip-card-front, .python-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.python-flip-card-front {
+  background-color: #0078ff;
+  color: black;
+  z-index: 2;
+}
+
+.python-flip-card-back {
+  background-color: #0078ff;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+/*javascript flip cards*/
+.js-flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.js-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.js-flip-card:hover .js-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.js-flip-card-front, .js-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.js-flip-card-front {
+  background-color: #6b757e;
+  color: black;
+  z-index: 2;
+}
+
+.js-flip-card-back {
+  background-color: #6b757e;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+/*HTML flip card styles */
+.html-flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.html-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.html-flip-card:hover .html-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.html-flip-card-front, .html-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.html-flip-card-front {
+  background-color: #00ab34;
+  color: black;
+  z-index: 2;
+}
+
+.html-flip-card-back {
+  background-color: #00ab34;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+/* CSS flip card styling */
+.css-flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.css-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.css-flip-card:hover .css-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.css-flip-card-front, .css-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.css-flip-card-front {
+  background-color: #ee153e;
+  color: black;
+  z-index: 2;
+}
+
+.css-flip-card-back {
+  background-color: #ee153e;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
