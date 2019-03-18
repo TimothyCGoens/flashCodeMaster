@@ -1,3 +1,2 @@
 # flashCodeMaster
-
-Branch for Gregory Priznar
+Repository for first group project
