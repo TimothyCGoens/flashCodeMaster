@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>flashCODE</title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBYus7Ht2hWI4nugvh8cf0cJLay_HR5mqM",
+        authDomain: "flashcode-6d464.firebaseapp.com",
+        databaseURL: "https://flashcode-6d464.firebaseio.com",
+        projectId: "flashcode-6d464",
+        storageBucket: "flashcode-6d464.appspot.com",
+        messagingSenderId: "892530891568"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="loginstyle.css"></link>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script type="text/javascript">
+
+      // Login Config
+      var uiConfig = {
+        signInSuccessUrl: 'main-menu.html',
+        signInOptions: [
+          // Login Methods
+          firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID,
+        ],
+      };
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+  </head>
+  <body>
+
+<!-- Only Edit Below this line -->
+
+    <style>
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+    }
+    </style>
+    <h1>flashCODE</h1>
+    <div id="firebaseui-auth-container"></div>
+  </body>
+
+
+</html
