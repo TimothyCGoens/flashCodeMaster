@@ -16,6 +16,11 @@ h1 {
 
 }
 
+div a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
 .body {
   display: flex;
   flex-direction: column;
@@ -253,11 +258,11 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.cl-flip-card:hover .css-flip-card-inner {
+.cl-flip-card:hover .cl-flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.cl-flip-card-front, .css-flip-card-back {
+.cl-flip-card-front, .cl-flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -295,11 +300,11 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.iq-flip-card:hover .css-flip-card-inner {
+.iq-flip-card:hover .iq-flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.iq-flip-card-front, .css-flip-card-back {
+.iq-flip-card-front, .iq-flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
