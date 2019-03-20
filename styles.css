@@ -38,7 +38,11 @@ div a:hover {
 }
 
 .navbar {
-  text-align: center;
+  text-align: center;'
+}
+
+.navbar-brand {
+  text-align: left;
 }
 
 #flashCards {
@@ -51,6 +55,11 @@ div a:hover {
 #buttons {
   display: flex;
   justify-content: center;
+}
+
+button {
+  height: auto;
+  width: auto;
 }
 
 .next {
@@ -106,7 +115,7 @@ div a:hover {
 
 .python-flip-card-front {
   background-color: #0078ff;
-  color: black;
+  color: white;
   z-index: 2;
 }
 
@@ -147,7 +156,7 @@ div a:hover {
 
 .js-flip-card-front {
   background-color: #6b757e;
-  color: black;
+  color: white;
   z-index: 2;
 }
 
@@ -188,7 +197,7 @@ div a:hover {
 
 .html-flip-card-front {
   background-color: #00ab34;
-  color: black;
+  color: white;
   z-index: 2;
 }
 
@@ -229,7 +238,7 @@ div a:hover {
 
 .css-flip-card-front {
   background-color: #ee153e;
-  color: black;
+  color: white;
   z-index: 2;
 }
 
