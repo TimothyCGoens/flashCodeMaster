@@ -73,10 +73,7 @@ button {
   background-color: #e4500a;
 }
 
-.log-in {
-  position: absolute;
-  right: 0px;
-}
+
 .log-out {
   position: absolute;
   right: 0px;
@@ -322,7 +319,7 @@ button {
 
 .iq-flip-card-front {
   background-color: #5aaed6;
-  color: black;
+  color: white;
   z-index: 2;
 }
 
