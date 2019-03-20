@@ -28,9 +28,9 @@ div a:hover {
 
 #flash-card-menu {
   padding-top: 2%;
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:center;
 }
 
 .card {

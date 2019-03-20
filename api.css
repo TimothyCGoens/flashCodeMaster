@@ -9,4 +9,9 @@
 #pics {
     height: 150px;
     width:125px;
+    padding: 10px;
+}
+
+#resourcetext {
+  text-align: center;
 }

@@ -10,7 +10,7 @@ function loadPage(){
     }).then(function(myJSON){
 
       myJSON.items.forEach(function(items){
-       let bookLIItems =  
+       let bookLIItems =
                   `<div id="bookDisplay">
                   <a href="${items.volumeInfo.infoLink}">
                   <img src='${items.volumeInfo.imageLinks.smallThumbnail}' id="pics">
@@ -20,11 +20,10 @@ function loadPage(){
         list.innerHTML += bookLIItems
       })
 
-      
-      
+
+
   })
 }
 
 
 loadPage()
-

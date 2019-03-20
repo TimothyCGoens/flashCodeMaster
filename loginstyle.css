@@ -3,5 +3,9 @@ h1 {
   text-align: center;
   font-size: 42px;
   padding-top: 25px;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
+}
+
+body {
+  background-image: url("media/bg5.jpg");
 }
