@@ -1,4 +1,4 @@
-let htmlflashcards =
+let htmlFlashCards =
 
     [
     {"Term": "HTML", "Definition": "Hyper Text Markup Language"},

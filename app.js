@@ -1,5 +1,3 @@
-// Python
-
 let cardDef = document.getElementById("cardDef")
 let cardTerm = document.getElementById('cardTerm')
 let nextButton = document.getElementById('nextButton')

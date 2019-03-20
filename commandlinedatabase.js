@@ -1,4 +1,4 @@
-let commandlineflashcards =
+let commandlineFlashCards =
 
     [
     {"Term": "pwd", "Definition": "print working directory"},
@@ -42,6 +42,6 @@ let commandlineflashcards =
     {"Term": "rm -r", "Definition": "deletes a directory and all of its child directories"},
     {"Term": "sort", "Definition": "takes a filename or standard input and orders each line alphabetically, printing it to standard output"},
     {"Term": "source", "Definition": "activates the changes in ~/.bash_profile for the current session"},
-    {"Term": "touch", "Definition": "creates a new file inside the working directory"}
+    {"Term": "touch", "Definition": "creates a new file inside the working directory"},
     {"Term": "uniq", "Definition": "takes a filename or standard input and prints out every line, removing any exact duplicates"}
     ]

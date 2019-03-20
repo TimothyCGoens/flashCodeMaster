@@ -1,4 +1,4 @@
-let javascriptflashcards =
+let javascriptFlashCards =
 
     [
     {"Term":"array", "Definition": "an object used to store multiple values in a single variable", "Example": "let array = [1, 2, 3, 4, 5]"},

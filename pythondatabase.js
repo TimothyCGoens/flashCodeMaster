@@ -1,4 +1,4 @@
-let pythonflashcards =
+let pythonFlashCards =
 
     [
     {"Term": "Comment (#)", "Definition": "used for the purpose of in-code documentation"},
