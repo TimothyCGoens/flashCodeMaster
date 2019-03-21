@@ -18,15 +18,28 @@
   </head>
   <body class="body">
       <input type="hidden" id="language" value="python"></input>
-    <!--nav bar code-->
-    <h1 id="header">flashCode</h1>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="main-menu.html">Main Menu</a>
-          <a class="navbar-brand" href="#">Favorites</a>
-          <a class="log-out navbar-brand" href="login.html" onClick="alert('You have been logged out!')">Log Out</a>
-        </nav>
+      <!--nav bar code-->
+
+      <h1 id="header">flashCode</h1>
+
+      <nav class="navbar navbar-expand-lg navbar-dark menu-background" id="navbarmargins">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="main-menu.html">Main Menu <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="+">Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="log-out" href="../login.html">Logout</a>
+        </li>
       </div>
+      </nav>
 <!-- the actual flash card code -->
 <div id="flashCards">
       <h3>Hover over question to flip card</h3><br>

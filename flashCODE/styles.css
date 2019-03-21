@@ -2,6 +2,10 @@ h1 {
   text-align: center;
 }
 
+.menu-background {
+  background-color: #313131;
+}
+
 .container {
   font-family: 'Inconsolata', monospace;
 }
@@ -74,9 +78,9 @@ button {
 }
 
 
-.log-out {
-  position: absolute;
-  right: 0px;
+#navbarmargins {
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 
