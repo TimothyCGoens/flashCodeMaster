@@ -1,4 +1,4 @@
-let gitflashcards =
+let gitFlashCards =
 
     [
     {"Term":"$ git diff <first-branch>...<second-branch>", "Definition": "Shows content differences between two branches"},

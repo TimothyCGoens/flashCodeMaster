@@ -9,7 +9,9 @@ let languageObject = {
   javascript: javascriptFlashCards,
   html: htmlFlashCards,
   commandLine: commandlineFlashCards,
-  css: cssFlashCards
+  css: cssFlashCards,
+  github: gitFlashCards
+
 }
 
 let cardArray = languageObject[language]
