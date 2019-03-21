@@ -2,7 +2,12 @@ let cardDef = document.getElementById("cardDef")
 let cardTerm = document.getElementById('cardTerm')
 let nextButton = document.getElementById('nextButton')
 let previousButton = document.getElementById('previousButton')
+let faveButton = document.getElementById('faveButton')
 let language = document.getElementById('language').value
+const placeHolderExample = `<span>  </span>`
+
+let database = firebase.database()
+let usersRef = database.ref("users")
 
 let languageObject = {
   python: pythonFlashCards,
@@ -11,7 +16,6 @@ let languageObject = {
   commandLine: commandlineFlashCards,
   css: cssFlashCards,
   github: gitFlashCards
-
 }
 
 let cardArray = languageObject[language]
@@ -19,8 +23,9 @@ let cardArray = languageObject[language]
 let counter = 0
 
 
-cardDef.innerHTML = cardArray[counter].Term
-cardTerm.innerHTML = cardArray[counter].Definition
+cardTerm.innerHTML = cardArray[counter].Term
+cardDef.innerHTML = cardArray[counter].Definition
+cardEx.innerHTML = cardArray[counter].Example == undefined ? placeHolderExample : `<p><b><u>Example</b></u><br>${cardArray[counter].Example}</p>`
 previousButton.style.visibility = 'hidden'
 
 function buttonDisplay(counter) {
@@ -38,11 +43,14 @@ function buttonDisplay(counter) {
 
 nextButton.addEventListener('click',function(){
   counter += 1
-
+  // let example = cardArray[counter].Example == undefined ? placeHolderExample :
   let questionItem = `<p>${cardArray[counter].Term}</p>`
   let solutionItem = `<p>${cardArray[counter].Definition}</p>`
-  cardDef.innerHTML = solutionItem
+  let exampleItem = cardArray[counter].Example == undefined ? placeHolderExample : `<p><b><u>Example</b></u><br>${cardArray[counter].Example}</p>`
+
   cardTerm.innerHTML = questionItem
+  cardDef.innerHTML = solutionItem
+  cardEx.innerHTML = exampleItem
 
   buttonDisplay(counter)
   })
@@ -52,9 +60,21 @@ previousButton.addEventListener('click',function(){
 
   let questionItem = `<p>${cardArray[counter].Term}</p>`
   let solutionItem = `<p>${cardArray[counter].Definition}</p>`
-  cardDef.innerHTML = solutionItem
+  let exampleItem = cardArray[counter].Example == undefined ? placeHolderExample : `<p><b><u>Example</b></u><br>${cardArray[counter].Example}</p>`
   cardTerm.innerHTML = questionItem
+  cardDef.innerHTML = solutionItem
+  cardEx.innerHTML = exampleItem
 
   buttonDisplay(counter)
 
   })
+
+faveButton.addEventListener('click',function(){
+   let userId = firebase.auth().currentUser.uid
+   let userRef = usersRef.child(userId)
+   userRef.push({
+     definition: cardArray[counter].Definition,
+     term: cardArray[counter].Term,
+     language: language
+   })
+ })

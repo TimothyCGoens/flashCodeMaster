@@ -1,17 +1,18 @@
 #list {
-    display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
-    padding: 15px;
-    justify-content: center;
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: center;
 }
 
 #pics {
-    height: 150px;
-    width:125px;
-    padding: 10px;
+  height: 150px;
+  width:125px;
+  padding: 10px;
 }
 
 #resourcetext {
+  font-family: 'Inconsolata', monospace;
   text-align: center;
 }
