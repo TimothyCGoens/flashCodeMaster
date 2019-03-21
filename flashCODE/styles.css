@@ -178,13 +178,13 @@ button {
 
 .js-flip-card-front {
   background-color: #6c757c;
-  color: black;
+  color: white;
   z-index: 2;
 }
 
 .js-flip-card-back {
   background-color: #6c757c;
-  color: black;
+  color: white;
   transform: rotateY(180deg);
   z-index: 1;
 }
@@ -313,15 +313,15 @@ button {
   z-index: 1;
 }
 
-/* Interview Questions Styling  */
-.iq-flip-card {
+/* Github Flashcard Styling  */
+.gh-flip-card {
   background-color: transparent;
   width: 450px;
   height: 300px;
   perspective: 1000px;
 }
 
-.iq-flip-card-inner {
+.gh-flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -331,24 +331,24 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.iq-flip-card:hover .iq-flip-card-inner {
+.gh-flip-card:hover .iq-flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.iq-flip-card-front, .iq-flip-card-back {
+.gh-flip-card-front, .iq-flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
-.iq-flip-card-front {
+.gh-flip-card-front {
   background-color: #5aaed6;
   color: white;
   z-index: 2;
 }
 
-.iq-flip-card-back {
+.gh-flip-card-back {
   background-color: #5aaed6;
   color: white;
   transform: rotateY(180deg);

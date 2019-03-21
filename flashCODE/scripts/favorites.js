@@ -1,7 +1,6 @@
 let faveUl = document.getElementById('faveUl')
 
 let database = firebase.database()
-let usersRef = database.ref("users")
 
 
 function displayFavorites() {

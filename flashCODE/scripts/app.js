@@ -6,9 +6,6 @@ let faveButton = document.getElementById('faveButton')
 let language = document.getElementById('language').value
 const placeHolderExample = `<span>  </span>`
 
-let database = firebase.database()
-let usersRef = database.ref("users")
-
 let languageObject = {
   python: pythonFlashCards,
   javascript: javascriptFlashCards,
@@ -71,6 +68,8 @@ previousButton.addEventListener('click',function(){
 
 faveButton.addEventListener('click',function(){
    let userId = firebase.auth().currentUser.uid
+   let database = firebase.database()
+   let usersRef = database.ref("users")
    let userRef = usersRef.child(userId)
    userRef.push({
      definition: cardArray[counter].Definition,
