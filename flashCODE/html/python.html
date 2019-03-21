@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="../styles.css"</link>
     <link rel="stylesheet" href="../api.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </head>
-  <body class="body">
+
+  <body id="iq-main">
       <input type="hidden" id="language" value="python"></input>
       <!--nav bar code-->
 
@@ -36,12 +36,13 @@
           <a class="nav-link" href="+">Favorites</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="log-out" href="../login.html">Logout</a>
+          <a class="nav-link" href="../login.html">Logout</a>
         </li>
       </div>
       </nav>
 <!-- the actual flash card code -->
 <div id="flashCards">
+      <br>
       <h3>Hover over question to flip card</h3><br>
       <div class="python-flip-card">
         <div class="python-flip-card-inner">
