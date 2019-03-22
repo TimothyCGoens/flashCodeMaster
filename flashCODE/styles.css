@@ -99,9 +99,20 @@ transition: all 0.4s ease 0s;
   justify-content: center;
 }
 #faveButton {font-family: 'Inconsolata', monospace;
-background-color: #e64e69
+color: #494949 !important;
+background: #ffffff;
+padding: 9px;
+border: 1px solid #494949 !important;
+border-radius: 6px;
+display: inline-block;
 }
 
+#faveButton:hover {
+color: #ffffff !important;
+background: #00AB66;
+border-color: #00AB66 !important;
+transition: all 0.4s ease 0s;
+}
 button {
   height: auto;
   width: auto;
