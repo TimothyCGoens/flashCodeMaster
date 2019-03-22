@@ -75,8 +75,8 @@ display: inline-block;
 
 #deleteBtn:hover {
 color: #ffffff !important;
-background: #f6b93b;
-border-color: #f6b93b !important;
+background: #CC434A;
+border-color: #CC434A !important;
 transition: all 0.4s ease 0s;
 }
 
