@@ -35,63 +35,22 @@
   </li>
 </div>
 </nav>
+<br>
 
-    <div id="flash-card-menu"<div>
-
-    <!-- Python -->
-    <a href="python.html">
-    <div class="card text-white bg-primary mb-3" style="max-width: 22rem;">
-      <div class="card-body">
-        <h5 class="card-title">Python</h5>
-        <p class="card-text">Flashcards to help you practice Python vocabulary and syntax.</p>
-      </div>
-    </div></a>
-
-    <!-- JavaScript -->
-    <a href="javascript.html">
-    <div id="jsLink" class="card text-white bg-secondary mb-3" style="max-width: 22rem;">
-      <div class="card-body">
-        <h5 class="card-title">JavaScript</h5>
-        <p class="card-text">Flashcards to help you practice JavaScript vocabulary and syntax.</p>
-      </div>
-    </div></a>
-
-      <!-- HTML -->
-      <a href="html.html">
-    <div class="card text-white bg-success mb-3" style="max-width: 22rem;">
-      <div class="card-body">
-        <h5 class="card-title">HTML</h5>
-        <p class="card-text">Flashcards to help you practice HTML vocabulary and syntax.</p>
-      </div>
-    </div></a>
-
-    <!-- CSS -->
-    <a href="css.html">
-    <div class="card text-white bg-danger mb-3" style="max-width: 22rem;">
-      <div class="card-body">
-        <h5 class="card-title">CSS</h5>
-        <p class="card-text">Flashcards to help you practice CSS vocabulary and syntax.</p>
-      </div>
-    </div></a>
-
-    <!-- Command Line -->
-    <a href="commandline.html">
-    <div class="card text-white bg-warning mb-3" style="max-width: 22rem;">
-      <div class="card-body">
-        <h5 class="card-title">Command Line</h5>
-        <p class="card-text">Flashcards to help you practice Command Line vocabulary and syntax.</p>
-      </div>
-    </div></a>
-
-    <!-- Interview Questions -->
-    <a href="github.html">
-    <div class="card text-white bg-info mb-3" style="max-width: 22rem;">
-      <div class="card-body">
-        <h5 class="card-title">GitHub</h5>
-        <p class="card-text">Flashcards to help you practice GitHub vocabulary and syntax.</p>
-      </div>
-    </div></a>
-
+<!-- Review Table -->
+<div id="reviewtable">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Language</th>
+        <th scope="col">Term</th>
+        <th scope="col">Definition</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody id="tableitems">
+    </tbody>
+  </table>
 </div>
 
     <!-- Optional JavaScript -->
@@ -108,6 +67,7 @@
            };
            firebase.initializeApp(config);
          </script>
+         <script src="../scripts/favorites.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
