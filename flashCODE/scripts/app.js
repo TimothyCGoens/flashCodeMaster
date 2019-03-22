@@ -3,6 +3,7 @@ let cardTerm = document.getElementById('cardTerm')
 let nextButton = document.getElementById('nextButton')
 let previousButton = document.getElementById('previousButton')
 let faveButton = document.getElementById('faveButton')
+let logOutBtn = document.getElementById('logOutBtn')
 let language = document.getElementById('language').value
 const placeHolderExample = `<span>  </span>`
 
@@ -63,17 +64,26 @@ previousButton.addEventListener('click',function(){
   cardEx.innerHTML = exampleItem
 
   buttonDisplay(counter)
-
   })
 
 faveButton.addEventListener('click',function(){
-   let userId = firebase.auth().currentUser.uid
-   let database = firebase.database()
-   let usersRef = database.ref("users")
-   let userRef = usersRef.child(userId)
-   userRef.push({
-     definition: cardArray[counter].Definition,
-     term: cardArray[counter].Term,
-     language: language
-   })
- })
+  let database = firebase.database()
+  let usersRef = database.ref("users")
+  let userRef = usersRef.child(firebase.auth().currentUser.uid)
+  let cards = userRef.child("cards")
+  cards.push({
+    definition: cardArray[counter].Definition,
+    term: cardArray[counter].Term,
+    language: language
+  })
+})
+
+ logOutBtn.addEventListener('click',function(){
+    console.log('clicked')
+    firebase.auth().signOut().then(function(){
+        console.log("signed out")
+        console.log(firebase.auth().currentUser)
+    }).catch(function(){
+    })
+    window.location.replace("../login.html")
+  })
