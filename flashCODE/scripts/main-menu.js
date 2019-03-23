@@ -7,5 +7,5 @@ logOutBtn.addEventListener('click',function(){
        console.log(firebase.auth().currentUser)
    }).catch(function(){
    })
-   window.location.replace("../login.html")
+   window.location.replace("../index.html")
  })
