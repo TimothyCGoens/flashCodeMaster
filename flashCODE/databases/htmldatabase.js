@@ -20,7 +20,7 @@ let htmlFlashCards =
     {"Term": "< button >", "Definition": "tag to create a button element"},
     {"Term": "< ul >", "Definition": "tag to create an unordered list element"},
     {"Term": "< ol >", "Definition": "tag to create an ordered list element"},
-    {"Term": "< li >", "Defintion": "tag to create a list element inside either ul or ol elements"},
+    {"Term": "< li >", "Definition": "tag to create a list element inside either ul or ol elements"},
     {"Term": "id", "Definition": "Specifies a unique id for an element"},
     {"Term": "< b >", "Definition": "Bolds text"},
     {"Term": "< i >", "Definition": "Italices text"},

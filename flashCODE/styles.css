@@ -14,6 +14,8 @@ h1 {
 }
 #header {
   font-family: 'Inconsolata', monospace;
+  display: flex;
+  justify-content: center;
 }
 
 #loginPane {
@@ -23,15 +25,16 @@ h1 {
 
 }
 #cardTerm {
-  font-size: 17px;
+  font-size: 15px;
   margin: 100px 15px 15px 15px;
 }
 #cardDef {
-  font-size: 17px;
+  font-size: 15px;
   margin: 50px 15px 15px 15px;
 
 }
 #cardEx {
+  font-size: 13px;
   margin: 15px;
 }
 
@@ -40,10 +43,16 @@ div a:hover {
   text-decoration-color: white;
 }
 
+#headColor {
+  display: flex;
+  justify-content: center;
+}
 .body {
   display: flex;
   flex-direction: column;
+  background-color: #ecececd9
 }
+
 
 #flash-card-menu {
   padding-top: 2%;
@@ -142,7 +151,7 @@ button {
 /* python flip cards*/
 .python-flip-card {
   background-color: transparent;
-  width: 450px;
+  width: 375px;
   height: 300px;
   perspective: 1000px;
 }
@@ -183,7 +192,7 @@ button {
 /*javascript flip cards*/
 .js-flip-card {
   background-color: transparent;
-  width: 450px;
+  width: 375px;
   height: 300px;
   perspective: 1000px;
 }
@@ -224,7 +233,7 @@ button {
 /*HTML flip card styles */
 .html-flip-card {
   background-color: transparent;
-  width: 450px;
+  width: 375px;
   height: 300px;
   perspective: 1000px;
 }
@@ -265,7 +274,7 @@ button {
 /* CSS flip card styling */
 .css-flip-card {
   background-color: transparent;
-  width: 450px;
+  width: 375px;
   height: 300px;
   perspective: 1000px;
 }
@@ -307,7 +316,7 @@ button {
 /* Command Line Styling  */
 .cl-flip-card {
   background-color: transparent;
-  width: 450px;
+  width: 375px;
   height: 300px;
   perspective: 1000px;
 }
@@ -349,7 +358,7 @@ button {
 /* Github Flashcard Styling  */
 .gh-flip-card {
   background-color: transparent;
-  width: 450px;
+  width: 375px;
   height: 300px;
   perspective: 1000px;
 }
