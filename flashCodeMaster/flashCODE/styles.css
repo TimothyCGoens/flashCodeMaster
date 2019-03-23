@@ -1,0 +1,398 @@
+h1 {
+  text-align: center;
+}
+#hover {
+  margin: 17px;
+}
+
+.menu-background {
+  background-color: #313131;
+}
+
+.container {
+  font-family: 'Inconsolata', monospace;
+}
+#header {
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  justify-content: center;
+}
+
+#loginPane {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+#cardTerm {
+  font-size: 15px;
+  margin: 100px 15px 15px 15px;
+}
+#cardDef {
+  font-size: 15px;
+  margin: 50px 15px 15px 15px;
+
+}
+#cardEx {
+  font-size: 13px;
+  margin: 15px;
+}
+
+div a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+#headColor {
+  display: flex;
+  justify-content: center;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ecececd9
+}
+
+
+#flash-card-menu {
+  padding-top: 2%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.card {
+  margin: 25px;
+}
+
+.navbar {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;'
+}
+
+.navbar-brand {
+  text-align: left;
+}
+
+#deleteBtn {
+color: #494949 !important;
+background: #ffffff;
+padding: 5px;
+border: 1px solid #494949 !important;
+border-radius: 6px;
+display: inline-block;
+}
+
+#deleteBtn:hover {
+color: #ffffff !important;
+background: #CC434A;
+border-color: #CC434A !important;
+transition: all 0.4s ease 0s;
+}
+
+#reviewtable {
+  margin-left: 10%;
+  margin-right: 10%
+}
+
+#flashCards {
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#buttons {
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  justify-content: center;
+}
+#faveButton {font-family: 'Inconsolata', monospace;
+color: #494949 !important;
+background: #ffffff;
+padding: 9px;
+border: 1px solid #494949 !important;
+border-radius: 6px;
+display: inline-block;
+}
+
+#faveButton:hover {
+color: #ffffff !important;
+background: #00AB66;
+border-color: #00AB66 !important;
+transition: all 0.4s ease 0s;
+}
+button {
+  height: auto;
+  width: auto;
+}
+
+.next {
+  margin-top: 5px;
+  margin-left: 63px;
+  width: 88.3px;
+}
+.previous {
+  margin-top: 5px;
+  margin-right: 63px;
+  background-color: #e4500a;
+}
+#jsLink {
+  background-color: #c1c3c5;
+}
+
+#navbarmargins {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+
+
+/* python flip cards*/
+.python-flip-card {
+  background-color: transparent;
+  width: 375px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.python-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.python-flip-card:hover .python-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.python-flip-card-front, .python-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.python-flip-card-front {
+  background-color: #0078ff;
+  color: white;
+  z-index: 2;
+}
+
+.python-flip-card-back {
+  background-color: #0078ff;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+/*javascript flip cards*/
+.js-flip-card {
+  background-color: transparent;
+  width: 375px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.js-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.js-flip-card:hover .js-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.js-flip-card-front, .js-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.js-flip-card-front {
+  background-color: #6c757c;
+  color: white;
+  z-index: 2;
+}
+
+.js-flip-card-back {
+  background-color: #6c757c;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+/*HTML flip card styles */
+.html-flip-card {
+  background-color: transparent;
+  width: 375px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.html-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.html-flip-card:hover .html-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.html-flip-card-front, .html-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.html-flip-card-front {
+  background-color: #00ab34;
+  color: white;
+  z-index: 2;
+}
+
+.html-flip-card-back {
+  background-color: #00ab34;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+/* CSS flip card styling */
+.css-flip-card {
+  background-color: transparent;
+  width: 375px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.css-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.css-flip-card:hover .css-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.css-flip-card-front, .css-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.css-flip-card-front {
+  background-color: #ee153e;
+  color: white;
+  z-index: 2;
+}
+
+.css-flip-card-back {
+  background-color: #ee153e;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* Command Line Styling  */
+.cl-flip-card {
+  background-color: transparent;
+  width: 375px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.cl-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.cl-flip-card:hover .cl-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.cl-flip-card-front, .cl-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cl-flip-card-front {
+  background-color: #ffc802;
+  color: black;
+  z-index: 2;
+}
+
+.cl-flip-card-back {
+  background-color: #ffc802;
+  color: black;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* Github Flashcard Styling  */
+.gh-flip-card {
+  background-color: transparent;
+  width: 375px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.gh-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.gh-flip-card:hover .gh-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.gh-flip-card-front, .gh-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.gh-flip-card-front {
+  background-color: #5aaed6;
+  color: white;
+  z-index: 2;
+}
+
+.gh-flip-card-back {
+  background-color: #5aaed6;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}

@@ -1,0 +1,29 @@
+/* h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 42px;
+  padding-top: 25px;
+  padding-bottom: 3%;
+}
+
+body {
+  background-image: url("media/bg5.jpg");
+} */
+#main {
+  background-color: #ecececd9;
+}
+
+#flashcode {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#flash {
+  padding-top: 10px;
+  display: flex;
+  text-align: center;
+}
+.flashLetters {
+  font-size: 75px;
+  padding-left: 5px;
+}

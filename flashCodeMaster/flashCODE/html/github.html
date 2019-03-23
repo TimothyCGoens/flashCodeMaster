@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<title> GitHub </title>
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../styles.css"</link>
+    <link rel="stylesheet" href="../api.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body id="iq-main" class='body'>
+    <input type="hidden" id="language" value="github"></input>
+
+    <!--nav bar code-->
+
+    <h1 id="header">flashCode</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark menu-background" id="navbarmargins">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="main-menu.html">Main Menu <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="review.html">Review</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href= "#" id="logOutBtn">Logout</a>
+      </li>
+    </div>
+    </nav>
+
+      <!-- the actual flash card code -->
+      <div id="flashCards">
+            <h4 id="hover">Hover over question to flip card</h4>
+            <div class="gh-flip-card">
+              <div class="gh-flip-card-inner">
+                <div class="gh-flip-card-front">
+                  <br>
+                  <p id= "cardTerm"></p>
+                </div>
+                <div class="gh-flip-card-back">
+                  <p id= "cardDef"></p>
+                  <p id="cardEx"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--previous/next buttons-->
+          <br><br>
+          <div id="buttons">
+            <button type="button" id="previousButton" class="previous btn btn-primary">Previous</button>
+            <button type="button" id="faveButton" class="fave btn btn-secondary">Review</button>
+            <button type="button" id="nextButton" class="next btn btn-secondary">Next</button>
+          </div>
+
+              <br><br>
+            <div id = "apibox">
+              <h3 id= "resourcetext">More Resources</h3>
+              <ul id = "list">
+              </ul>
+            </div>
+
+    <!-- Optional JavaScript -->
+    <!-- <script src="../scripts/comlineAPI.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+       <script>
+           // Initialize Firebase
+           var config = {
+             apiKey: "AIzaSyBYus7Ht2hWI4nugvh8cf0cJLay_HR5mqM",
+             authDomain: "flashcode-6d464.firebaseapp.com",
+             databaseURL: "https://flashcode-6d464.firebaseio.com",
+             projectId: "flashcode-6d464",
+             storageBucket: "flashcode-6d464.appspot.com",
+             messagingSenderId: "892530891568"
+           };
+           firebase.initializeApp(config);
+         </script>
+
+    <script src="../scripts/allAPI.js"></script>
+    <script src="../databases/pythondatabase.js"></script>
+    <script src="../databases/cssdatabase.js"></script>
+    <script src="../databases/htmldatabase.js"></script>
+    <script src="../databases/javascriptdatabase.js"></script>
+    <script src="../databases/commandlinedatabase.js"></script>
+    <script src="../databases/gitdatabase.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>
