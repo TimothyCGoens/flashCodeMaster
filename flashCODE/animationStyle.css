@@ -1,3 +1,21 @@
+#main {
+  background-color: #ecececd9;
+}
+
+#flashcode {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#flash {
+  padding-top: 10px;
+  display: flex;
+  text-align: center;
+}
+.flashLetters {
+  font-size: 75px;
+  padding-left: 5px;
+}
 
 #flashcode {
   display: flex;
@@ -13,224 +31,6 @@ h2 {
   margin-top: 10px;
 }
 
-.fCard-flip-card {
-  font-size: 70px;
-  background-color: transparent;
-  width: 75px;
-  height: 100px;
-  perspective: 1000px;
-}
-
-.fCard-flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.fCard-flip-card:hover .fCard-flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.fCard-flip-card-front, .fCard-flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.fCard-flip-card-front {
-  background-color: black;
-  color: white;
-  z-index: 2;
-}
-
-.fCard-flip-card-back {
-  font-size: 70px;
-  background-color: #0078ff;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-}
-
-/* l card CSS */
-.lCard-flip-card {
-  font-size: 70px;
-  background-color: transparent;
-  width: 75px;
-  height: 100px;
-  perspective: 1000px;
-}
-
-.lCard-flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.lCard-flip-card:hover .lCard-flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.lCard-flip-card-front, .lCard-flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.lCard-flip-card-front {
-  background-color: black;
-  color: white;
-  z-index: 2;
-}
-
-.lCard-flip-card-back {
-  font-size: 70px;
-  background-color: #0078ff;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-}
-
-/* a card css */
-.aCard-flip-card {
-  font-size: 70px;
-  background-color: transparent;
-  width: 75px;
-  height: 100px;
-  perspective: 1000px;
-}
-
-.aCard-flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.aCard-flip-card:hover .aCard-flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.aCard-flip-card-front, .aCard-flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.aCard-flip-card-front {
-  background-color: black;
-  color: white;
-  z-index: 2;
-}
-
-.aCard-flip-card-back {
-  font-size: 70px;
-  background-color: #0078ff;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-}
-
-/* s card css */
-.sCard-flip-card {
-  font-size: 70px;
-  background-color: transparent;
-  width: 75px;
-  height: 100px;
-  perspective: 1000px;
-}
-
-.sCard-flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.sCard-flip-card:hover .sCard-flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.sCard-flip-card-front, .sCard-flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.sCard-flip-card-front {
-  background-color: black;
-  color: white;
-  z-index: 2;
-}
-
-.sCard-flip-card-back {
-  font-size: 70px;
-  background-color: #0078ff;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-}
-
-/* h card css */
-.hCard-flip-card {
-  font-size: 70px;
-  background-color: transparent;
-  width: 75px;
-  height: 100px;
-  perspective: 1000px;
-}
-
-.hCard-flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.hCard-flip-card:hover .hCard-flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.hCard-flip-card-front, .hCard-flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.hCard-flip-card-front {
-  background-color: black;
-  color: white;
-  z-index: 2;
-}
-
-.hCard-flip-card-back {
-  font-size: 70px;
-  background-color: #0078ff;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-}
 /* c card css */
 .cCard-flip-card {
   font-size: 70px;
@@ -262,7 +62,7 @@ h2 {
 }
 
 .cCard-flip-card-front {
-  background-color: #0078ff;
+  background-color: #17a2b8;
   color: black;
   z-index: 2;
 }
@@ -306,7 +106,7 @@ h2 {
 }
 
 .oCard-flip-card-front {
-  background-color: #0078ff;
+  background-color: #ffc802;
   color: black;
   z-index: 2;
 }
@@ -350,7 +150,7 @@ h2 {
 }
 
 .dCard-flip-card-front {
-  background-color: #0078ff;
+  background-color: #00ab34;
   color: black;
   z-index: 2;
 }
@@ -394,7 +194,7 @@ h2 {
 }
 
 .eCard-flip-card-front {
-  background-color: #0078ff;
+  background-color: #ee153e;
   color: black;
   z-index: 2;
 }
