@@ -9,4 +9,9 @@
 
 **URL:** http://flashcode.surge.sh/index.html
 
+**Login Screen:**
+
 ![](flashCodeHomePage.gif)
+
+**Example of Flash Cards:**
+![](flashCodeCardFlip.gif)
