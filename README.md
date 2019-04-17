@@ -14,4 +14,4 @@
 ![](flashCodeLogin.gif)
 
 **Example of Flash Cards:**
-![](flashCodeCardFlip.gif)
+![](flashCodeFlipping.gif)
