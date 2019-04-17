@@ -11,7 +11,7 @@
 
 **Login Screen:**
 
-![](flashCodeHomePage.gif)
+![](flashCodeLogin.gif)
 
 **Example of Flash Cards:**
 ![](flashCodeCardFlip.gif)
